@@ -2,8 +2,12 @@ package com.amuyu.samplecoroutine
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
+import android.view.View
 import com.amuyu.logger.Logger
+import com.amuyu.samplecoroutine.ui.LaunchActivity
+import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.coroutines.experimental.*
+import org.jetbrains.anko.startActivity
 import kotlin.concurrent.thread
 import kotlin.system.measureTimeMillis
 
@@ -17,6 +21,9 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         Logger.d("oncreate1")
+        bt_launch.setOnClickListener(View.OnClickListener {
+            startActivity<LaunchActivity>()
+        })
 
 //        delay()
 //        job()

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context="com.amuyu.samplecoroutine.ui.WaitCancelJobActivity">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Count Up"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/tv_count"/>
+
+    <TextView
+        android:id="@+id/tv_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        tools:text="0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_title"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/et_wait_time"/>
+
+    <EditText
+        android:id="@+id/et_wait_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:text="1000"
+        app:layout_constraintTop_toBottomOf="@id/tv_count"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/bt_run"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_time_unit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ms"
+        app:layout_constraintLeft_toRightOf="@id/et_wait_time"
+        app:layout_constraintBaseline_toBaselineOf="@id/et_wait_time"/>
+
+    <Button
+        android:id="@+id/bt_run"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="run"
+        app:layout_constraintLeft_toRightOf="@id/et_wait_time"
+        app:layout_constraintBaseline_toBaselineOf="@id/et_wait_time"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>

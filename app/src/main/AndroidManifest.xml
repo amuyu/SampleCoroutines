@@ -20,6 +20,7 @@
         <activity android:name=".ui.LaunchActivity"/>
         <activity android:name=".ui.LightweightActivity"/>
         <activity android:name=".ui.WaitCancelJobActivity"/>
+        <activity android:name=".ui.TimeoutActivity"/>
     </application>
 
 </manifest>

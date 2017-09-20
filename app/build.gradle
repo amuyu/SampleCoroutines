@@ -30,7 +30,9 @@ dependencies {
     implementation "com.android.support.constraint:constraint-layout:$versions.constraintLayout"
     implementation "com.amuyu:logger:$versions.logger"
     implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$versions.coroutines"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$versions.coroutines"
     implementation "io.reactivex.rxjava2:rxkotlin:$versions.rxjava2"
+    implementation "io.reactivex.rxjava2:rxandroid:$versions.rxandroid"
 
     implementation "org.jetbrains.anko:anko:$versions.anko"
     implementation "org.jetbrains.anko:anko-commons:$versions.anko"

@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity
 import android.view.View
 import com.amuyu.logger.Logger
 import com.amuyu.samplecoroutine.ui.LaunchActivity
+import com.amuyu.samplecoroutine.ui.LightweightActivity
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.coroutines.experimental.*
 import org.jetbrains.anko.startActivity
@@ -23,6 +24,10 @@ class MainActivity : AppCompatActivity() {
         Logger.d("oncreate1")
         bt_launch.setOnClickListener(View.OnClickListener {
             startActivity<LaunchActivity>()
+        })
+
+        bt_lightweight.setOnClickListener(View.OnClickListener {
+            startActivity<LightweightActivity>()
         })
 
 //        delay()

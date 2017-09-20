@@ -3,7 +3,7 @@ package com.amuyu.samplecoroutine.ui
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import com.amuyu.samplecoroutine.R
-import kotlinx.android.synthetic.main.activity_wait_job.*
+import kotlinx.android.synthetic.main.activity_cancel_job.*
 import kotlinx.coroutines.experimental.*
 import kotlinx.coroutines.experimental.android.UI
 
@@ -14,7 +14,7 @@ class CancelJobActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_wait_job)
+        setContentView(R.layout.activity_cancel_job)
 
         bt_run.setOnClickListener {
             bt_run.isEnabled = false

@@ -6,7 +6,7 @@ import android.view.View
 import com.amuyu.logger.Logger
 import com.amuyu.samplecoroutine.ui.LaunchActivity
 import com.amuyu.samplecoroutine.ui.LightweightActivity
-import com.amuyu.samplecoroutine.ui.CancelJobActivity
+import com.amuyu.samplecoroutine.ui.WaitCancelJobActivity
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.coroutines.experimental.*
 import org.jetbrains.anko.startActivity
@@ -22,7 +22,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        Logger.d("oncreate1")
         bt_launch.setOnClickListener(View.OnClickListener {
             startActivity<LaunchActivity>()
         })
@@ -32,16 +31,10 @@ class MainActivity : AppCompatActivity() {
         })
 
         bt_cancel_job.setOnClickListener {
-            startActivity<CancelJobActivity>()
+            startActivity<WaitCancelJobActivity>()
         }
 
-//        delay()
-//        job()
-//        refactoring()
-//        runList()
-//        runListThread()
-//        repeat()
-//        repeatThread()
+
 //        cooperative()
 //        composeSequential()
         composeAsync()

@@ -21,4 +21,11 @@
         android:layout_marginTop="10dp"
         android:text="Light-weight thread"/>
 
+    <Button
+        android:id="@+id/bt_cancel_job"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Cancel job"/>
+
 </LinearLayout>

@@ -6,6 +6,7 @@ import android.view.View
 import com.amuyu.logger.Logger
 import com.amuyu.samplecoroutine.ui.LaunchActivity
 import com.amuyu.samplecoroutine.ui.LightweightActivity
+import com.amuyu.samplecoroutine.ui.CancelJobActivity
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.coroutines.experimental.*
 import org.jetbrains.anko.startActivity
@@ -29,6 +30,10 @@ class MainActivity : AppCompatActivity() {
         bt_lightweight.setOnClickListener(View.OnClickListener {
             startActivity<LightweightActivity>()
         })
+
+        bt_cancel_job.setOnClickListener {
+            startActivity<CancelJobActivity>()
+        }
 
 //        delay()
 //        job()

@@ -19,6 +19,7 @@
 
         <activity android:name=".ui.LaunchActivity"/>
         <activity android:name=".ui.LightweightActivity"/>
+        <activity android:name=".ui.CancelJobActivity"/>
     </application>
 
 </manifest>
